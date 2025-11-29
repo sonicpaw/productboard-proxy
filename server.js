@@ -16,7 +16,7 @@ const BASE_URL = process.env.BASE_URL; // e.g. https://yourdomain.com
 const REDIRECT_PATH = "/productboard/callback";
 const REDIRECT_URI = BASE_URL + REDIRECT_PATH;
 const PORT = process.env.PORT || 3000;
-const PB_AUTH_URL = "https://api.productboard.com/oauth/authorize";
+const PB_AUTH_URL = "https://productboard.com/oauth/authorize";
 const PB_TOKEN_URL = "https://api.productboard.com/oauth/token";
 const PB_API_BASE = "https://api.productboard.com";
 
@@ -177,3 +177,4 @@ app.post("/productboard/disconnect", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Proxy running on ${PORT}, redirect_uri=${REDIRECT_URI}`);
 });
+
